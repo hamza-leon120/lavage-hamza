@@ -1,0 +1,28 @@
+.img-hero 
+    img(src = "img/396512995_1655776578281351_1772472022556538993_n.jpg", alt = "hero")
+.top 
+    i(class = "fa-solid fa-angle-up")
+header 
+    .continer 
+        .log 
+            h1 #[span lavage] hamza 
+        ul 
+            if(ac = "active")
+                li: a(class = "active" href = `html/index.html`) home 
+            else 
+                li: a(href = `html/index.html`) home
+            - var list = ["à propos","service","contact"]
+            each val,indix in list
+                if(indix === location)
+                    li: a(class = "active" href = `html/${val}.html`)= val
+                else 
+                    li: a(href = `html/${val}.html`)= val
+        .contact
+            p +213552592742
+            i(class = "fa-brands fa-viber viber")
+            i(class = "fa-brands fa-whatsapp whatsapp")
+        i(class = "fa-solid fa-bars bars")
+    if(test == true)
+        h1(style = "font-size: 100px")=h1
+    else 
+        h1=h1

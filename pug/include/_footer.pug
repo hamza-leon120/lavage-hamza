@@ -1,0 +1,17 @@
+footer 
+    .continer 
+        .log 
+            h1 #[span lavage] hamza 
+        .one
+            h2 Resources
+            ul 
+                -var list = ["home","à propos","service","contact"]
+                each val in list 
+                    li: a(href = `html/${val}.html`)=val
+        .one 
+            h2 Information
+            ul 
+                -var list = ["4 rue ahmed ouaked dely brahim","+21352592742"]
+                each val in list 
+                    li: a(href = `#`)=val
+script(src = "js/main.js")

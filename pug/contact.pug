@@ -1,0 +1,25 @@
+-var location = 3
+-var h1 = "contact"
+include ./include/_mxin.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        include ./include/_link.pug
+        title contact da lavage hamza
+    body 
+        include ./include/_heder.pug
+        .section(class = "contact-fin")
+            +alks("contact")
+            .continer 
+                div(class = "img maps")
+                div 
+                    p adresse : #[span 4 rue ahmed ouaked dely brahim]
+                    hr
+                    p numero : #[span(class = "sp") 0552592742]
+                    hr
+                    div 
+                        i(class = "fa-brands fa-viber viber")
+                        i(class = "fa-brands fa-whatsapp whatsapp")
+        include ./include/_footer.pug

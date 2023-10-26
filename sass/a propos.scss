@@ -1,0 +1,25 @@
+@use "./mixin/mixin" as * ;
+@use "./layout/layout" as * ;
+header {
+    > h1:last-child {
+        font-size: 70px;
+        line-height: 75px;
+        background-position: center;
+    }
+}
+.propos {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    .continer {
+        div {
+            @include flex(canter,canter);
+            max-width: 950px;
+            margin: auto;
+            p {
+                font-size: 22px;
+                text-align: center;
+                line-height: 40px;
+            }
+        }
+    }
+}

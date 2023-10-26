@@ -1,0 +1,66 @@
+@mixin medai ($point){
+    @if $point == mobail {
+        @media (max-width : 767px) {
+            @content;
+        }
+    } @else if $point == small {
+        @media (min-width : 768px) {
+            @content;
+        }
+    } @else if $point == max-medium {
+        @media (max-width : 992px) {
+            @content;
+        }
+    } @else if $point == medium {
+        @media (min-width : 992px) {
+            @content;
+        }
+    } @else if $point == max-large {
+        @media (max-width : 1200px) {
+            @content;
+        }
+    } @else if $point == large {
+        @media (min-width : 1200px) {
+            @content;
+        }
+    }
+}
+
+@mixin flex($x:null,$y:null,$w:null,$c:null,$d:null){
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+    flex-wrap: $w;
+    align-content: $c;
+    flex-direction: $d;
+}
+
+@mixin size($w:null,$h:null){
+    width: $w;
+    height: $h;
+}
+
+@mixin position($p,$t:null,$r:null,$b:null,$l:null){
+    position: $p;
+    top: $t;
+    right: $r;
+    bottom: $b;
+    left: $l;
+}
+
+@mixin text ($f:null,$l:null,$w:null){
+    font-size: $f;
+    line-height: $l;
+    font-weight: $w;
+}
+
+@mixin button ($w,$h,$r,$c:inherit,$b:null){
+    width: $w;
+    height: $h;
+    border-radius: $r;
+    line-height: $h;
+    text-align: center;
+    color: $c;
+    background-color: $b;
+    cursor: pointer;
+}

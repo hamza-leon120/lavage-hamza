@@ -1,0 +1,30 @@
+mixin alks(one)
+    .alks 
+        .all 
+            h2 #{one}
+
+mixin one(one,tow,three,four)
+    .cailed
+        img(src= one alt = tow)
+        .all
+            h3 #{tow}
+            if(four === "null")
+                break
+            else
+                p voiture normal : #[span #{three}]
+            if(four === "null")
+                p prix : à partir de #[span 10000 DA]
+            else
+                p voiture 4X4 : #[span #{four}]
+
+mixin tow(zero,one,tow,three)
+    h3 #{one}
+    .pirent 
+        if(zero == "null")
+            div 
+                img(src=tow, alt=one)
+                p #{three}
+        else 
+            div(class = "rev")
+                img(src=tow, alt=one)
+                p #{three}
